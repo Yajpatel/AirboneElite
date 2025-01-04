@@ -19,7 +19,7 @@ body {
 }
 
 
-/* .animation-container {
+.animation-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -31,9 +31,9 @@ body {
     align-items: center;
     z-index: 1000;
     overflow: hidden;
-} */
+} 
 
-/* .animation-container::before {
+.animation-container::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -44,10 +44,10 @@ body {
     background-position: center;
     opacity: 0.5;
     z-index: -1;
-} */
+}
 
 
-/* #welcome-message {
+#welcome-message {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -57,19 +57,19 @@ body {
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         opacity: 0;
         transition: opacity 1s ease;
-    } */
+    }
 
-/* #welcome-message.show {
+#welcome-message.show {
     opacity: 1;
-} */
+}
 
-/* #main-content {
+#main-content {
     display: none; 
-} */
+}
 
-/* #main-content.visible {
+#main-content.visible {
     display: block;
-} */
+}
 
     
 
@@ -94,15 +94,20 @@ nav a {
     transition: color 0.3s ease;
 }
 
+#nav-heading{
+    font-size: 50px;
+}
+
 .right-corner{
     display: flex;
+    align-items: center;
 }
 .anchor{
     padding: 3px;
     height: 1.8rem;
 }
 .anchor:hover{
-    box-shadow: 0px 0px 2px 1px black;
+    /* box-shadow: 0px 0px 2px 1px black; */
     transition: all 0.5s ease;
 }
 .anchor:hover > a{
@@ -285,9 +290,6 @@ footer p {
     background-color: #4a3c31;
 }
 
-/* .hidden {
-    display: none;
-} */
 .show {
     display: block;
     opacity: 0;
