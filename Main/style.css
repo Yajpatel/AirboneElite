@@ -19,7 +19,7 @@ body {
 }
 
 
-.animation-container {
+/* .animation-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -31,9 +31,9 @@ body {
     align-items: center;
     z-index: 1000;
     overflow: hidden;
-} 
+} */
 
-.animation-container::before {
+/* .animation-container::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -44,10 +44,10 @@ body {
     background-position: center;
     opacity: 0.5;
     z-index: -1;
-}
+} */
 
 
-#welcome-message {
+/* #welcome-message {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -57,19 +57,19 @@ body {
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         opacity: 0;
         transition: opacity 1s ease;
-    }
+    } */
 
-#welcome-message.show {
+/* #welcome-message.show {
     opacity: 1;
-}
+} */
 
-#main-content {
+/* #main-content {
     display: none; 
-}
+} */
 
-#main-content.visible {
+/* #main-content.visible {
     display: block;
-}
+} */
 
     
 
@@ -80,12 +80,12 @@ body {
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: #cbb292;
-    padding: 7px 0;
+    /* background-color: #cbb292; */
+    padding: 7px 0;          
 }
 
 nav a {
-    color: #4a3c31;
+    color: #4a3c31;   
     margin: 0 15px;
     font-weight: bold;
     font-size: 18px;
@@ -94,20 +94,32 @@ nav a {
     transition: color 0.3s ease;
 }
 
-#nav-heading{
-    font-size: 50px;
+.brand-name {
+    font-family: 'Playfair Display', serif;     
+    font-size: 2rem; 
+    font-weight: bold; 
+    letter-spacing: 1px; 
+    color: #8c6d46; 
+    margin-left: 20px;
+    margin-bottom: 5px;
+    white-space: nowrap;
 }
 
 .right-corner{
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
 }
 .anchor{
     padding: 3px;
     height: 1.8rem;
+    background-color: #d3d3d3;
+    border-radius: 25px;
+    margin: 0 5px;
 }
 .anchor:hover{
-    /* box-shadow: 0px 0px 2px 1px black; */
+    background-color : #8c6d46;
     transition: all 0.5s ease;
 }
 .anchor:hover > a{
@@ -290,6 +302,9 @@ footer p {
     background-color: #4a3c31;
 }
 
+/* .hidden {
+    display: none;
+} */
 .show {
     display: block;
     opacity: 0;
