@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jets Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .jet-row {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px 0;
+            scrollbar-width: none;
+            scrollbar-color: #888 #f4f4f9;
+        }
+
+        .jet {
+            flex: 0 0 calc(40% - 10px); /* Adjust to show 2.5 jets */
+            margin: 0 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .jet img {
+            width: 100%;
+            height: 25rem;
+            display: block;
+            /* padding: 1rem; */
+        }
+
+        .jet h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="jet-row">
+            <div class="jet">
+                <img src="jet images\Beechcraft King Air\Screenshot 2025-01-16 233506.png" alt="Jet 1">
+                <h3>Jet 1</h3>
+            </div>
+            <div class="jet">
+                <img src="jet images\Beechcraft King Air\Screenshot 2025-01-16 233516.png" alt="Jet 2">
+                <h3>Jet 2</h3>
+            </div>
+            <div class="jet">
+                <img src="jet images\Beechcraft King Air\Screenshot 2025-01-16 233535.png" alt="Jet 3">
+                <h3>Jet 3</h3>
+            </div>
+            <div class="jet">
+                <img src="jet images\Beechcraft King Air\Screenshot 2025-01-16 233618.png" alt="Jet 4">
+                <h3>Jet 4</h3>
+            </div>
+            <div class="jet">
+                <img src="jet images\Bombardier Challenger\Screenshot 2025-01-16 233858.png" alt="Jet 5">
+                <h3>Jet 5</h3>
+            </div>
+            <div class="jet">
+                <img src="jet images\Bombardier Challenger\Screenshot 2025-01-16 233910.png" alt="Jet 6">
+                <h3>Jet 6</h3>
+            </div>
+            <div class="jet">
+                <img src="jet images\Bombardier Challenger\Screenshot 2025-01-16 233922.png" alt="Jet 7">
+                <h3>Jet 7</h3>
+            </div>
+            
+        </div>
+    </div>
 </body>
 </html>
