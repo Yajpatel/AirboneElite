@@ -17,6 +17,10 @@ body {
     color: #4a3c31;
     line-height: 1.5;
 }
+
+.inquire-btn{
+    text-decoration : none
+}
 /* section{
     border:5px solid black;
 } */
