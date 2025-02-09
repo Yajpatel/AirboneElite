@@ -5,45 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scrollable Cards</title>
     <link rel="stylesheet" href="jetstyle.css">
+    <link rel="icon" type="image/x-icon" href="Assets/private-jet.png">
+    <!-- For icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- For Font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <header>
+        <nav>
+            <div class="brand-name" >
+                Æ            
+            </div>
+            <div class="right-corner">
+                <div class="anchor"><a href="../Home/index.html">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    Home</a></div>
+                <div class="anchor"><a href="../Jets/jets.html">Jets</a></div>
+                <div class="anchor"><a href="#about">About Us</a></div>
+                <div class="anchor"><a href="#contact">Contact</a></div>
+            </div>
+        </nav>
+    </header>
+    
     <div class="container">
         <div class="card">
-            <img src="Assets/jet1.png" alt="Jet 1">
+            <img src="../Home/Assets/jet3.png" alt="Jet 1">
             <h3>Jet Model 1</h3>
-            <p>Price: $25M</p>
-            <button>Details</button>
+            <button class="details-button" onclick="redirectTo('../planes/plane-1.html')">Details</button>
         </div>
         <div class="card">
-            <img src="Assets/jet2.png" alt="Jet 2">
+            <img src="../Home/Assets/Unusually green Dassault Falcon 7X/1672930917360461.webp" alt="Jet 2">
             <h3>Jet Model 2</h3>
-            <p>Price: $30M</p>
-            <button>Details</button>
+            <button class="details-button" onclick="redirectTo('../planes/plane-2.html')">Details</button>
         </div>
         <div class="card">
-            <img src="Assets/jet3.png" alt="Jet 3">
+            <img src="../Home/Assets/Bombardier Challenger 300/1682535098.jpeg" alt="Jet 3">
             <h3>Jet Model 3</h3>
-            <p>Price: $35M</p>
-            <button>Details</button>
+            <button class="details-button" onclick="redirectTo('../planes/plane-3.html')">Details</button>
         </div>
         <div class="card">
-            <img src="https://via.placeholder.com/300x150" alt="Jet 4">
+            <img src="../Home/Assets/Lewis Hamilton/170153_big.jpg" alt="Jet 4">
             <h3>Jet Model 4</h3>
-            <p>Price: $28M</p>
-            <button>Inquire Now</button>
+            <button class="details-button" onclick="redirectTo('../planes/plane-4.html')">Details</button>
         </div>
         <div class="card">
-            <img src="https://via.placeholder.com/300x150" alt="Jet 5">
+            <img src="../Home/Assets/Lightning-fast Citation X/Citation-X-Ext.jpg" alt="Jet 5">
             <h3>Jet Model 5</h3>
-            <p>Price: $32M</p>
-            <button>Inquire Now</button>
+            <button class="details-button" onclick="redirectTo('../planes/plane-5.html')">Details</button>
         </div>
         <div class="card">
-            <img src="https://via.placeholder.com/300x150" alt="Jet 6">
+            <img src="../Home/Assets/Bombardier Challenger 300/bombardier-challenger-300-1 (1).webp" alt="Jet 6">
             <h3>Jet Model 6</h3>
-            <p>Price: $40M</p>
-            <button>Inquire Now</button>
+            <button class="details-button" onclick="redirectTo('../planes/plane-6.html')">Details</button>
         </div>
+        <div class="card">
+            <img src="../Home/Assets/Bombardier Challenger 300/Challenger_300.jpg" alt="Jet 7">
+            <h3>Jet Model 7</h3>
+            <button class="details-button" onclick="redirectTo('../planes/plane-7.html')">Details</button>
+        </div>
+        <div class="card">
+            <img src="../Home/Assets/Lightning-fast Citation X/idaho-falls-july-9-2022-600nw-2283510507.webp" alt="Jet 8">
+            <h3>Jet Model 8</h3>
+            <button class="details-button" onclick="redirectTo('../planes/plane-8.html')">Details</button>
+        </div>
+        <div class="card">
+            <img src="../Home/Assets/Lightning-fast Citation X/luVuud5SHBRTtxgXhOX7nSadluJFTO6aJGWt8heOTxGua.jpg" alt="Jet 9">
+            <h3>Jet Model 9</h3>
+            <button class="details-button" onclick="redirectTo('../planes/plane-9.html')">Details</button>
+        </div>
+        <div class="card">
+            <img src="../Home/Assets/Lightning-fast Citation X/citation-x-1024x683.jpg" alt="Jet 10">
+            <h3>Jet Model 10</h3>
+            <button class="details-button" onclick="redirectTo('../planes/plane-10.html')">Details</button>
+        </div>
+        <!-- <div class="card">
+            <img src="../Home/Assets/Bombardier Challenger 300/bombardier-challenger-300-3.webp" alt="Jet 11">
+            <h3>Jet Model 11</h3>
+            <button class="details-button" onclick="redirectTo('../planes/plane-11.html')">Details</button>
+        </div>
+        <div class="card">
+            <img src="../Home/Assets/Bombardier Challenger 300/Challenger_300.jpg" alt="Jet 12">
+            <h3>Jet Model 12</h3>
+            <button class="details-button" onclick="redirectTo('../planes/plane-12.html')">Details</button>
+        </div>
+        <div class="card">
+            <img src="../Home/Assets/Max Verstappen Dassault Falcon 900EX/51246383096_0db29aab65_b.jpg" alt="Jet 13">
+            <h3>Jet Model 13</h3>
+            <button class="details-button" onclick="redirectTo('../planes/plane-13.html')">Details</button>
+        </div>
+        <div class="card">
+            <img src="../Home/Assets/Nike’s sneaker-inspired Gulfstream G550/35827408860_c231d64b0d_b.jpg" alt="Jet 14">
+            <h3>Jet Model 14</h3>
+            <button class="details-button" onclick="redirectTo('../planes/plane-14.html')">Details</button>
+        </div>
+        <div class="card">
+            <img src="../Home/Assets/The feathered Gulfstream G650 owned by Nike’s Phil Knight/19265_1621813894.jpg" alt="Jet 15">
+            <h3>Jet Model 15</h3>
+            <button class="details-button" onclick="redirectTo('../planes/plane-15.html')">Details</button>
+        </div>
+        <div class="card">
+            <img src="../Home/Assets/Unusually green Dassault Falcon 7X/1672930917360461.webp" alt="Jet 16">
+            <h3>Jet Model 16</h3>
+            <button class="details-button" onclick="redirectTo('../planes/plane-16.html')">Details</button>
+        </div>
+        <div class="card">
+            <img src="../Home/Assets/jet2.png" alt="Jet 17">
+            <h3>Jet Model 17</h3>
+            <button class="details-button" onclick="redirectTo('../planes/plane-17.html')">Details</button>
+        </div>
+        <div class="card">
+            <img src="../Home/Assets/jet3.png" alt="Jet 18">
+            <h3>Jet Model 18</h3>
+            <button class="details-button" onclick="redirectTo('../planes/plane-18.html')">Details</button>
+        </div> -->
     </div>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
 </body>
+
 </html>
