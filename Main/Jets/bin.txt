@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="icon" href="../AlgoVis/Images/Fevicon.webp" />
+    <!-- Css file -->
+    <link rel="stylesheet" type="text/css" href="../css/SortingVisualizer.css">
+    <!-- Fevicon -->
+    <link rel="icon" type="image/x-icon" href="../AlgoVis/Images/Fevicon.webp">
+    <!-- for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="content">
+        <!-- Wrapper for the logo -->
+        <div class="nav-logo">
+            <div class="logo">
+                <h1>Algorithm<span>Visualizer</span></h1>
+            </div>
+        </div>
+
+        <!-- Wrapper for algorithm selector -->
+        <div class="nav-items">
+            <ul>
+                <li>
+                    <select name="algo" id="algoselected" > 
+                        <option value="" disabled selected>CHOOSE ALGORITHM</option>
+                        <option value="bubble">BUBBLE</option>
+                        <option value="selection">SELECTION</option>
+                        <option value="insertion">INSERTION</option>
+                        <option value="quick">QUICK</option>
+                        <option value="merge">MERGE</option>
+                        <!-- <option value="heap">HEAP</option> -->
+                    </select>
+                </li>
+
+                <!-- <li>
+                    <a>
+                        <button id="arr_generate">Reset Array!</button>
+                    </a>
+                </li> -->
+                <li>
+                    <button id="arr_randomize">Randomize!</button>
+                </li>
+                <li>
+                    <button id="arr_sort">Sort!</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- New section for Size and Speed -->
+    <div class="controls-navbar">
+        <div class="control-item">
+            <label for="arr_size">Size</label>
+            <input id="arr_size" type="range" min="3" max="30" step="3" value="10">
+            <!-- <span class="tooltip" id="size-tooltip">20</span> -->
+        </div>
+        <div class="control-item">
+            <label for="arr_speed">Speed</label>
+            <input id="arr_speed" type="range" min="1" max="10" step="1" value="5">
+            <!-- <span class="tooltip" id="speed-tooltip">8</span> -->
+        </div>
+    </div>  
+    
+
+    <div class="array-container"></div>
+
+    <script src="../js/sorting/main.js"></script>
+    <script src="../js/sorting/visualization.js"></script>
+    <script src="../js/sorting/selectionsort.js"></script>
+    <script src="../js/sorting/bubble.js"></script>
+    <script src="../js/sorting/insertionsort.js"></script>
+    <script src="../js/sorting/quicksort.js"></script>
+    <script src="../js/sorting/merge.js"></script>
+    <script src="../js/sorting/heapsort.js"></script>
+</body>
+</html>
+<!-- 
+/* SortingVisualizer.css */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Main Navbar */
+nav.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 15px 30px;
+    height: 7rem;
+    width: 100vw;
+}
+
+.nav-logo h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+}
+
+.nav-logo h1 span {
+    color: aqua;
+}
+
+/* Navigation Items */
+.nav-items ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 2rem; /* Push the nav-links to the bottom */
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.nav-items ul li {
+    display: inline;
+}
+
+/* ================================================ */
+.nav-items select,
+.nav-items button {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* Button styling */
+/* #arr_generate, */
+#arr_randomize,
+#arr_sort {
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 1rem; /* Add space around links */
+    font-size: 1rem;
+    font-weight: 800;
+    border-radius: 10px; /* Rounded corners */
+    transition: all 0.5s ease-in-out; /* Smooth transition for hover effect */
+    margin: 1rem;
+}
+
+/* #arr_generate:hover, */
+select:hover,
+#arr_randomize:hover,
+#arr_sort:hover {
+    color: aqua;
+    background-color: #000; /* Add a slight background on hover */
+    box-shadow: 0 0 10px 2px aqua; /* Glow effect */
+}
+
+.nav-items ul li select {
+    margin-top: 1.5rem; /* Adjust as needed */
+    border-radius: 10px;
+}
+/* ==================================================================== */
+
+/* =========================================== */
+/* Secondary Navbar for Size & Speed */
+.controls-navbar {
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.controls-navbar .control-item {
+    margin: 0 20px;
+    color: black;
+    font-size: 1rem;
+}
+
+.controls-navbar input[type="range"] {
+    width: 150px;
+}
+/* ================================== */
+
+
+.array-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 95%;
+    height: 300px; /* Adjust height as needed */
+    /* border: 1px solid black; */
+    margin: auto;
+    /* flex-wrap: wrap; */
+    position: relative;
+}
+
+.bar{
+    width: 2rem; /* Width of each bar */
+    /* margin-top: 5px; */
+    margin-left: 5px;
+    background-color: #5bc9b1;
+    display: flex;
+    justify-content: center;
+    color: #f9f9f9;
+    transition: transform 0.5s ease, background-color 0.3s ease; 
+    /* Smooth movement and color change */
+}
+make it responsive so that i can use it in phone to and 
+and for container bar  -->

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scrollable Cards</title>
-    <!-- Fevicon --><!-- icon near Title -->
     <link rel="icon" type="image/x-icon" href="Assets/private-jet.png">
     <!-- For icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -12,119 +11,203 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik:ital@0;1&display=swap" rel="stylesheet">
-    <!-- bootstrap -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- css -->
     <link rel="stylesheet" href="jetstyle.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="brand-name" >
-                Æ            
-            </div>
-            <div class="right-corner">
-                <div class="anchor"><a href="../Home/index.html">
-                    <i class="fa-solid fa-house-chimney"></i>
-                    Home</a></div>
-                <div class="anchor"><a href="../Jets/jets.html">Jets</a></div>
-                <div class="anchor"><a href="#about">About Us</a></div>
-                <div class="anchor"><a href="#contact">Contact</a></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="navbar-brand">Æ</div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Home/index.html"><i class="fa-solid fa-house-chimney"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Jets/jets.html">Jets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     
-    <div class="container">
-        <div class="card">
-            <img src="../Home/Assets/jet3.png" alt="Jet 1">
-            <h3>Jet Model 1</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-1.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/Unusually green Dassault Falcon 7X/1672930917360461.webp" alt="Jet 2">
-            <h3>Jet Model 2</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-2.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/Bombardier Challenger 300/1682535098.jpeg" alt="Jet 3">
-            <h3>Jet Model 3</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-3.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/Lewis Hamilton/170153_big.jpg" alt="Jet 4">
-            <h3>Jet Model 4</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-4.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/Lightning-fast Citation X/Citation-X-Ext.jpg" alt="Jet 5">
-            <h3>Jet Model 5</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-5.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/Bombardier Challenger 300/bombardier-challenger-300-1 (1).webp" alt="Jet 6">
-            <h3>Jet Model 6</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-6.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/Bombardier Challenger 300/Challenger_300.jpg" alt="Jet 7">
-            <h3>Jet Model 7</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-7.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/Lightning-fast Citation X/idaho-falls-july-9-2022-600nw-2283510507.webp" alt="Jet 8">
-            <h3>Jet Model 8</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-8.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/Lightning-fast Citation X/luVuud5SHBRTtxgXhOX7nSadluJFTO6aJGWt8heOTxGua.jpg" alt="Jet 9">
-            <h3>Jet Model 9</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-9.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/Lightning-fast Citation X/citation-x-1024x683.jpg" alt="Jet 10">
-            <h3>Jet Model 10</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-10.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/Bombardier Challenger 300/bombardier-challenger-300-3.webp" alt="Jet 11">
-            <h3>Jet Model 11</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-11.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/Bombardier Challenger 300/Challenger_300.jpg" alt="Jet 12">
-            <h3>Jet Model 12</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-12.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/Max Verstappen Dassault Falcon 900EX/51246383096_0db29aab65_b.jpg" alt="Jet 13">
-            <h3>Jet Model 13</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-13.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/Nike’s sneaker-inspired Gulfstream G550/35827408860_c231d64b0d_b.jpg" alt="Jet 14">
-            <h3>Jet Model 14</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-14.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/The feathered Gulfstream G650 owned by Nike’s Phil Knight/19265_1621813894.jpg" alt="Jet 15">
-            <h3>Jet Model 15</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-15.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/Unusually green Dassault Falcon 7X/1672930917360461.webp" alt="Jet 16">
-            <h3>Jet Model 16</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-16.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/jet2.png" alt="Jet 17">
-            <h3>Jet Model 17</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-17.html')">Details</button>
-        </div>
-        <div class="card">
-            <img src="../Home/Assets/jet3.png" alt="Jet 18">
-            <h3>Jet Model 18</h3>
-            <button class="details-button" onclick="redirectTo('../planes/plane-18.html')">Details</button>
+    <div class="container mt-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/jet3.png" class="card-img-top" alt="Jet 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 1</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-1.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/Unusually green Dassault Falcon 7X/1672930917360461.webp" class="card-img-top" alt="Jet 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 2</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-2.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/Bombardier Challenger 300/1682535098.jpeg" class="card-img-top" alt="Jet 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 3</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-3.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/Lewis Hamilton/170153_big.jpg" class="card-img-top" alt="Jet 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 4</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-4.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/Lightning-fast Citation X/Citation-X-Ext.jpg" class="card-img-top" alt="Jet 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 5</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-5.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/Bombardier Challenger 300/bombardier-challenger-300-1 (1).webp" class="card-img-top" alt="Jet 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 6</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-6.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/Bombardier Challenger 300/Challenger_300.jpg" class="card-img-top" alt="Jet 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 7</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-7.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/Lightning-fast Citation X/idaho-falls-july-9-2022-600nw-2283510507.webp" class="card-img-top" alt="Jet 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 8</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-8.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/Lightning-fast Citation X/luVuud5SHBRTtxgXhOX7nSadluJFTO6aJGWt8heOTxGua.jpg" class="card-img-top" alt="Jet 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 9</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-9.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/Lightning-fast Citation X/citation-x-1024x683.jpg" class="card-img-top" alt="Jet 10">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 10</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-10.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/Bombardier Challenger 300/bombardier-challenger-300-3.webp" class="card-img-top" alt="Jet 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 11</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-11.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/Bombardier Challenger 300/Challenger_300.jpg" class="card-img-top" alt="Jet 12">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 12</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-12.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/Max Verstappen Dassault Falcon 900EX/51246383096_0db29aab65_b.jpg" class="card-img-top" alt="Jet 13">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 13</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-13.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/Nike’s sneaker-inspired Gulfstream G550/35827408860_c231d64b0d_b.jpg" class="card-img-top" alt="Jet 14">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 14</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-14.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/The feathered Gulfstream G650 owned by Nike’s Phil Knight/19265_1621813894.jpg" class="card-img-top" alt="Jet 15">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 15</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-15.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/Unusually green Dassault Falcon 7X/1672930917360461.webp" class="card-img-top" alt="Jet 16">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 16</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-16.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/jet2.png" class="card-img-top" alt="Jet 17">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 17</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-17.html')">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../Home/Assets/jet3.png" class="card-img-top" alt="Jet 18">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Model 18</h5>
+                        <button class="btn btn-primary" onclick="redirectTo('../planes/plane-18.html')">Details</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
