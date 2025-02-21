@@ -21,14 +21,18 @@
     .inquire-btn{
         text-decoration : none
     }
+
+    .navbar a:hover{
+        color: bisque;
+    }   
     /* section{
         border:5px solid black;
     } */
 
-    nav {
+    /* nav {
         display: flex;
         justify-content: space-around;
-        /* background-color: #cbb292; */
+        background-color: #cbb292;
         padding: 7px 0;          
     }
 
@@ -73,7 +77,7 @@
     .anchor:hover > a{
         color: #fff;
         transition: all 0.5s ease;
-    }
+    } */
 
 .hero {
     position: relative;
@@ -130,11 +134,11 @@
     font-size: 1.2rem;
 }
 
-.container {
+/* .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
+} */
 
 
 .jets {
@@ -249,30 +253,6 @@ footer p {
 
 .contact-form button:hover {
     background-color: #4a3c31;
-}
-
-/* .hidden {
-    display: none;
-} */
-.show {
-    display: block;
-    opacity: 0;
-    display: flex;
-    
-    animation: fadeInOut 3s forwards; /* Fade-in and fade-out animation */
-}
-
-/* Animation for fading in and out */
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
 }
 
 /* for most-famous  */
