@@ -144,3 +144,14 @@ header {
 .card button:hover {
 	background-color: #5c482c;
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #cbb292;
+    color: #4a3c31;
+}
+
+footer p {
+    margin: 0;
+}
