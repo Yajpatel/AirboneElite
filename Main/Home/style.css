@@ -18,6 +18,23 @@
         line-height: 1.5;
     }
 
+    /* nav {
+        display: flex;
+        justify-content: space-around; */
+        /* background-color: #cbb292; */
+        /* padding: 7px 0;
+    } */
+    
+    nav a {
+        color: #4a3c31;
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 18px;
+        position: relative;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
     .inquire-btn{
         text-decoration : none
     }
