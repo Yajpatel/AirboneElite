@@ -15,7 +15,6 @@
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- css -->
 
     <style>
@@ -28,6 +27,10 @@
         }
         .vedio-1 video{
             width: 100%;
+        }
+
+        body{
+            background-color: rgb(255, 244, 224);
         }
 
         nav {
@@ -96,7 +99,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <header style="background-color: white;">
         <nav>
             <div class="brand-name">
                 Æ            
@@ -119,15 +122,86 @@
             Your browser does not support the video tag.
         </video>
     </div>
-    <div class="info">
-        abcdefghijklmnopqrstuvwxyz
-        <br>
-        bkadbvcilvye
-        <br>
-        bwhaldcvksdafvc,
-    </div>
-    <div class="carousel">
 
+    <div class="container my-5" style="background-color: bisque; height: 350px;">
+        <h1 class="text-center text-brown mb-4">Specifications and Details</h1>
+    
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Interior & Seating</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">A glass cockpit with a heads-up display</li>
+                            <li class="list-group-item">Three rear-mounted Pratt & Whitney PW307A turbofan engines</li>
+                            <li class="list-group-item">Room for 19 passengers and 3 crew</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">TECHNOLOGIES</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">A cabin that's extremely quiet, below 50 dBA</li>
+                            <li class="list-group-item">Honeywell Primus Epic "Enhanced Avionics System"</li>
+                            <li class="list-group-item">Satellite communications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">SPECIFICATIONS</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Three rear-mounted Pratt & Whitney PW307A turbofan engines</li>
+                            <li class="list-group-item">The first fully fly-by-wire business jet</li>
+                            <li class="list-group-item">The first production Falcon jet with winglets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+   
+    
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../Home/Assets/Unusually green Dassault Falcon 7X/1672930917360461.webp" class="d-block m-3 w-100" alt="..." height="700px">
+          </div>
+          <div class="carousel-item">
+            <img src="../Home/Assets/Unusually green Dassault Falcon 7X/2612552.jpg" class="d-block m-3  w-100" alt="..." height="700px">
+          </div>
+          <div class="carousel-item">
+            <img src="../Home/Assets/Unusually green Dassault Falcon 7X/5854443.jpg" class="d-block m-3 w-100" alt="..." height="700px">
+          </div>
+          <!-- <div class="carousel-item">
+            <img src="../Home/Assets/Unusually green Dassault Falcon 7X/65afbe53fcd9cf57a8087da4_40863121521_443dceff80_k.webp" class="d-block m-3 w-100" alt="..." height="700px">
+          </div> -->
+          <div class="carousel-item">
+            <img src="../Home/Assets/Unusually green Dassault Falcon 7X/Falcon-7X-Location-Menkor-Aviation.jpeg" class="d-block m-3 w-100" alt="..." height="700px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
